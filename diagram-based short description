@@ -1,0 +1,32 @@
+                +----------------------+
+                |        Main          |
+                |  (Launches App)     |
+                +----------+----------+
+                           |
+                           v
+                +----------------------+
+                |    Control Panel     |
+                |  (CardLayout GUI)   |
+                +----------+----------+
+                           |
+        -----------------------------------------
+        |                                       |
+        v                                       v
++-------------------+              +----------------------+
+|    Palace Panel   |              |    Booking Panel     |
+|------------------|              |----------------------|
+| • Add Palace     |              | • Create Booking     |
+| • Update Palace  |              | • Update Booking     |
+| • Delete Palace  |              | • Delete Booking     |
+| • View Records   |              | • Check Availability |
++---------+--------+              +----------+-----------+
+          |                                  |
+          v                                  v
++-------------------+            +------------------------+
+|   palaces.txt     |            |     bookings.txt       |
+| (File Storage)    |            |  (Persistent Data)     |
++-------------------+            +------------------------+
+
+                🔁 Booking Logic:
+     Select Palace → Enter Days → Check Date Conflict
+           → Calculate Total Price → Save Booking
